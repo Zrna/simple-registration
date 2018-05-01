@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+a, a:focus, a:hover, a:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+#form{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.box-holder{
+    max-width: 400px;
+    max-height: 500px;
+    color:#fff;
+    background:rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.box-login, .box-sign{
+    padding: 10px;
+    text-align: center;
+}
+
+.btn{
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 0rem;
+}
+
+.btn-login{
+    color: #ffffff;
+    background-color: #6666ff;
+    margin-right: 10%;
+}
+
+.btn-sign{
+    color: #ffffff;
+    background-color: #ff3333;
+    margin-right: 10%;
+}
+
+.btn-sign:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem #dc354536;
+}
+
+.form-control {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.38rem .75rem;
+    border-radius: 0px;
+}
+
+.form-control, .form-control:focus{
+    background: rgba(0,0,0,0.2);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: #333333!important;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #333333!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: #333333!important;
+}
+
+@media screen and (max-width: 375px){
+    #form{
+        margin-left: 10px;
+        padding-right: 20px;
+    }
+}

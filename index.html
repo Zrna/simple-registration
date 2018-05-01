@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- 
+        ************************************
+            Created by LUKA ZRNIC // lukazrnic.com
+        ************************************
+    -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple Login and Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.min.css" />
+
+</head>
+<body>
+
+<video class="bg-video" autoplay="autoplay" muted="muted" loop>
+    <source src="video/background-video.webm">
+</video>
+
+<section id="form">
+    <div class="container box-holder">
+        <form id="signupForm" method="POST" action="">
+            <div class="row">
+
+                <div class="col-md-12 box-login" id="log-in-box">
+                    <h1 class="text-uppercase">Login</h1>
+                    <div class="mt-5 mb-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email_login" name="email_login" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password_login" name="password_login" placeholder="Password">
+                        </div>
+                        <button class="btn btn-login float-right">Login</button>
+                    </div>
+                    <div class="pt-5">
+                        <p>Not a member? <a href="#" id="log-in">Sign Up</a></p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 box-sign d-none" id="sign-up-box">
+                    <h1 class="text-uppercase">Sign Up</h1>
+                    <div class="mt-5 mb-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email_signup" name="email_signup" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password_signup" name="password_signup" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirm password">
+                        </div>
+                        <button class="btn btn-sign float-right">Sign Up</button>
+                    </div>
+                    <div class="pt-5">
+                        <p>Already have an account? <a href="#" id="sign-up">Login</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>
