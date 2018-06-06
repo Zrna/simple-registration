@@ -26,7 +26,8 @@ $.validator.setDefaults({
     }
 
 });
-//custom metoda za validaciju emaila u formato pero@djuro.ivo
+
+// custom validation for email format: example@domain.com
 jQuery.validator.addMethod("laxEmail", function (value, element) {
     return this.optional(element) || /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/.test(value)
 }, 'Please enter a valid email address.');
@@ -47,7 +48,7 @@ $("#signupForm").validate({
         confirm_password: {
             required: true,
             minlength: 5,
-            // equalTo: "#password"
+            equalTo: "#password_signup"
         },
         email_login: {
             required: true,
