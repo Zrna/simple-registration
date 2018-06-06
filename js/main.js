@@ -18,7 +18,17 @@ $("#sign-up").click(function () {
 
 $.validator.setDefaults({
     submitHandler: function () {
-        alert("Submitted!");
+        var answer = confirm("Wanna user data?");
+
+        if (answer){
+            var email_login = $("#email_login").val();
+            var password_login = $("#password_login").val();
+            var email_signup = $("#email_signup").val();
+            var password_signup = $("#password_signup").val(); 
+            alert("Email: " + (email_login || email_signup) + "\n" + "Password: " + (password_login || password_signup));
+        } else {
+            // do something...
+        }
 
         setTimeout(function () {
             location.reload();
